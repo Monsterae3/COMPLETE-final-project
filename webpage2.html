@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+                h1{
+        font-size: 300%;
+        font-family: serif;
+        text-align: center;
+    }
+    .marginF
+{
+    margin-top: 25%;
+}
+.Center{
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center;    /* Center vertically */
+}
+#marginS{
+    margin: 20px; /* Add spacing around the element */
+}
+#CateringHeadings{
+        display: flex;
+        justify-content: space-around; /* Distributes items evenly with space in between */
+        text-align: center; /* Centers the text in each column */
+    }
+    #CateringHeadings h3{
+        flex: 1; /* Makes each heading take up an equal amount of space */
+        font-size: 230%;
+        font-family:serif;
+        font-weight: 100;
+        padding-top: 11%;
+    }
+    h3, h4 {
+        margin: 0; /* Remove default margin for consistency */
+    }
+    h4{
+        font-size: large;
+        margin-top: 5%;
+    }
+    h5 footer{
+        font-size: 140%;
+    }
+    p footer{
+    font-family: serif;
+    font-size: xx-large;
+}
+h5{
+    font-size: larger;
+    font-weight: 50;
+}
+
+        </style>
+        <title>Catering</title>
+        <link rel="stylesheet" href="css/stylesheet.css">
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div id="center">
+                    <ul>
+                        <li>
+                            <a href="index.html" class="image-button">
+                            <img src="images/button (1).png" alt="The Something Cafe Homepage" />
+                            <span>The Something Cafe</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="webpage1.html" class="image-button">
+                            <img src="images/button (4).png" alt="Menu" />
+                            <span>Menu</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="webpage2.html" class="image-button">
+                            <img src="images/button (2).png" alt="Catering" />
+                            <span>Catering</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="webpage3.html" class="image-button">
+                            <img src="images/button (3).png" alt="Contact" />
+                            <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <h1>Catering</h1>
+        </header>
+        <main>
+            <div class="Center">
+            <figure>
+                <img src="images/outdoor-dessert-table-with-macarons-and-cake.webp" alt="Our Catering">
+            </figure>
+            </div>
+            <h2 class="Center" id="marginS">Make your events special with our dessert platters, featuring our most popular treats. </h2>
+                <h2 class="Center">Perfect for showers, gatherings, and all your important occasions.</h2>
+                <div id="CateringHeadings">
+                    <div class="column">
+                        <h3>Slice Platters</h3>
+                            <h5>Available in 3 sizes<br>
+                                (72 hours notice is required)
+                            </h5>
+                                <h4>12" (serves 9 people) $55</h4>
+                                <h4>16" (serves 17 people) $105</h4>
+                                <h4>18" (serves 24 people) $135</h4>
+                    </div>
+                    <div class="column">
+                        <h3>Dessert Platters</h3>
+                        <h5>Available in 3 sizes<br>
+                            (72 hours notice is required)
+                        </h5>
+                            <h4>12" (serves 10 people) $62</h4>
+                            <h4>16" (serves 20 people) $120</h4>
+                            <h4>18" (serves 29 people) $145</h4>
+                    </div>
+                    <div class="column">
+                        <h3>Slice and Dessert Combo Platters</h3>
+                        <h5>Available in 3 sizes<br>
+                            (72 hours notice is required)
+                        </h5>
+                            <h4>12" (serves 9 people) $60</h4>
+                            <h4>16" (serves 17 people) $115</h4>
+                            <h4>18" (serves 24 people) $137</h4>
+                    </div>
+                </div>
+                <div class="Center" id="paddingForm">
+                <form action="action_page.php" method="GET">
+                    <div class="container"></div>
+                        <h2>Request a Catering Quote</h2>
+                        <hr>
+                        <label for="Name"><b>Name</b></label><br>
+                        <input type="text" placeholder="First" name="First" required>
+                        <input type="text" placeholder="Last" name="Last" required><br>
+                        <label for="Email"><b>Email</b></label><br>
+                        <input type="text" placeholder="Email@domain.com" name="Email" required><br>
+                        <label for="Phone"><b>Phone</b></label><br>
+                        <input type="text" placeholder="***-***-****" name="Phone" required><br>
+                        </select>
+                        <h4>Event date</h4>
+                        <input type="datetime-local" required><br>
+                        <label for="Number of People"><b>Number of People</b></label><br>
+                        <input type="text" placeholder="16" name="number of people" required><br>
+                        <label for="Budjet"><b>Budjet</b></label><br>
+                        <input type="text" placeholder="105$" name="Budjet" required><br>
+                        <label for="What are you looking for?">What are you looking for?</label><br>
+                        <select name="Answers" id="Answers">
+                            <option value="Slice Platters">Slice Platters</option>
+                            <option value="Dessert Platters">Dessert Platters</option>
+                            <option value="Slice and Dessert Combo">Slice and Dessert Combo</option>
+                        </select><br><br>
+                        <input type="submit" Value="Submit">
+                </form>
+                </div>
+        </main>
+        <footer>
+            <div class="marginF" id="FooterHeadings">
+                <div class="column">
+                    <h3>our location</h3>
+                    <p>The Something Cafe</p>
+                    <h5>23 Moonlit Path Whispering Pines, Eldoria 84567</h5>
+                    <h5>Phone: 123-456-7890</h5>
+                    <h5>Email: TheSomethingCafe@gmail.com</h5>
+                </div>
+                <div class="column">
+                    <h3>Hours</h3>
+                    <h5>Monday - Saturday</h5>
+                    <h5>10:00 – 17:00</h5>
+                </div>
+                <div class="column">
+                    <h3>links</h3>
+                    <a href="index.html">Homepage</a><br><br>
+                    <a href="webpage1.html">Menu</a><br><br>
+                    <a href="webpage2.html">Catering</a><br><br>
+                    <a href="webpage3.html">About us</a><br><br>
+                </div>
+                <div class="column">
+                    <h3>stay connected</h3>
+                    <h5>Phone: 123-456-7890</h5>
+                    <h5>Email: TheSomethingCafe@gmail.com</h5>
+                    <h5>Instagram:@TheSomethingCafe</h5>
+                    <h5>TikTok:@TheSomthingCafe</h5>
+                    <h5>Facebook:@TheSomethingCafe</h5>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
